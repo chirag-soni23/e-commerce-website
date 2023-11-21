@@ -34,22 +34,22 @@ function App() {
           } />
           <Route path="/cart" element={<Cart />} />
           <Route path="/dashboard" element={
-            <ProtectedRouteForAdmin>
+            // <ProtectedRouteForAdmin>
               <Dashboard />
-            </ProtectedRouteForAdmin>
+            // {/* </ProtectedRouteForAdmin> */}
           } />
           <Route path='/login' element={<Login/>} />
           <Route path='/signup' element={<Signup/>} />
           <Route path='/productinfo/:id' element={<ProductInfo/>} />
           <Route path='/addproduct' element={
-            <ProtectedRouteForAdmin>
+            // <ProtectedRouteForAdmin>
               <AddProduct/>
-            </ProtectedRouteForAdmin>
+            /* </ProtectedRouteForAdmin> */
           } />
           <Route path='/updateproduct' element={
-            <ProtectedRouteForAdmin>
+            // <ProtectedRouteForAdmin>
               <UpdateProduct/>
-            </ProtectedRouteForAdmin>
+            // {/* </ProtectedRouteForAdmin> */}
           } />
           <Route path="/*" element={<NoPage />} />
         </Routes>
