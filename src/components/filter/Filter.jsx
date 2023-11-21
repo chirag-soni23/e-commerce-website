@@ -67,8 +67,7 @@ function Filter() {
             </button>
           </div>
           <div>
-            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-4">
-              {/* Rest of your code */}
+            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-4"> 
               <select
                 value={filterType}
                 onChange={(e) => setFilterType(e.target.value)}
