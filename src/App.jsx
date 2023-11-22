@@ -34,22 +34,22 @@ function App() {
           } />
           <Route path="/cart" element={<Cart />} />
           <Route path="/dashboard" element={
-            //<ProtectedRouteForAdmin>
+            <ProtectedRouteForAdmin>
               <Dashboard />
-             //</ProtectedRouteForAdmin>
+             </ProtectedRouteForAdmin>
           } />
           <Route path='/login' element={<Login/>} />
           <Route path='/signup' element={<Signup/>} />
           <Route path='/productinfo/:id' element={<ProductInfo/>} />
           <Route path='/addproduct' element={
-            // <ProtectedRouteForAdmin>
+             <ProtectedRouteForAdmin>
               <AddProduct/>
-            //</ProtectedRouteForAdmin>
+            </ProtectedRouteForAdmin>
           } />
           <Route path='/updateproduct' element={
-          // <ProtectedRouteForAdmin>
+           <ProtectedRouteForAdmin>
               <UpdateProduct/>
-            //</ProtectedRouteForAdmin> 
+            </ProtectedRouteForAdmin> 
           } />
           <Route path="/*" element={<NoPage />} />
         </Routes>
@@ -78,7 +78,7 @@ export const ProtectedRoute = ({children}) => {
 const ProtectedRouteForAdmin = ({children})=> {
   const admin = JSON.parse(localStorage.getItem('user'))
   
-  if(admin.user.email === 'csoni0692@gmail.com'){
+  if(admin.user.email === 'csoni0693@gmail.com'){
     return children
   }
   else{
